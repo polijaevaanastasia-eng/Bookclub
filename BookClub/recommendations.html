@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Рекомендации — Книжный Клуб</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <span class="material-symbols-outlined">menu_book</span>
+        <span class="logo-text">Книжный Клуб</span>
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">
+            <span class="material-symbols-outlined">home</span>
+            Главное
+        </a>
+
+        <a href="discussion.html">
+            <span class="material-symbols-outlined">forum</span>
+            Обсуждения
+        </a>
+
+        <a href="schedule.html">
+            <span class="material-symbols-outlined">calendar_month</span>
+            Расписание
+        </a>
+
+        <a href="recommendations.html" class="active">
+            <span class="material-symbols-outlined">star</span>
+            Рекомендации
+        </a>
+    </nav>
+</header>
+
+
+<h1 class="page-title">Рекомендации книг</h1>
+<p class="page-subtitle">Ежемесячные подборки от участников клуба</p>
+
+
+<section class="recommendation-page">
+
+    <div class="book-month">
+
+        <div class="month-icon">
+            <span class="material-symbols-outlined">star</span>
+        </div>
+
+        <div class="month-content">
+
+            <h2>Книга месяца</h2>
+
+            <h3 class="month-book-title">Маленькая жизнь</h3>
+
+            <p class="month-author">Ханья Янагихара • Современная проза</p>
+
+            <p class="month-desc">
+                Эпическая история о четырех друзьях в Нью-Йорке, их амбициях, успехах и жизненных испытаниях.
+            </p>
+
+            <button class="more-btn" onclick="toggleBookInfo()">
+                Узнать больше
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- раскрывающийся блок -->
+<div id="bookInfo" class="book-details">
+
+    <div class="details-image">
+        <img src="images/little-life.jpg" alt="Обложка книги Маленькая жизнь">
+    </div>
+
+    <div class="details-info">
+
+        <h2>Маленькая жизнь</h2>
+
+        <p>
+            <span class="material-symbols-outlined">person</span>
+            Автор: Ханья Янагихара
+        </p>
+
+        <p>
+            <span class="material-symbols-outlined">star</span>
+            Рейтинг клуба: 4.8
+        </p>
+
+        <p>
+            <span class="material-symbols-outlined">menu_book</span>
+            Жанр: современная проза
+        </p>
+
+        <p>
+            <span class="material-symbols-outlined">groups</span>
+            Прочитали: 12 участников
+        </p>
+
+    </div>
+
+    <!-- новый блок справа -->
+    <div class="book-description-block">
+
+        <h2 class="description-title">Описание книги</h2>
+
+        <p class="book-description-text">
+            Американская писательница Ханья Янагихара создала необычный роман,
+            где и о страшном, и о радостном говорится без лишнего надрыва и сентиментальности.
+            Четверо друзей - талантливый архитектор Малкольм, начинающий актер Виллем, 
+            уверенный в собственной неповторимости художник Джей-Би и гениальный юрист и математик Джуд 
+            - пытаются добиться успеха в Нью-Йорке, но оказывается, что ни карьера, ни деньги, 
+            ни слава не могут справиться с прошлым, если оно сильнее жизни…
+        </p>
+
+    </div>
+
+</div>
+</section>
+<!-- Самые высоко оцененные книги -->
+
+<section class="top-rated">
+
+    <h2 class="top-title">
+        <span class="material-symbols-outlined">trending_up</span>
+        Самые высоко оцененные
+    </h2>
+
+    <div class="top-books">
+
+        <!-- книга 1 -->
+        <div class="top-book">
+            <div class="top-icon">
+                <span class="material-symbols-outlined">star</span>
+            </div>
+
+            <h3>Сто лет одиночества</h3>
+            <p class="top-author">Габриэль Гарсиа Маркес</p>
+
+            <p class="top-rating">
+                <span class="material-symbols-outlined">star</span>
+                4.9
+            </p>
+
+            <p class="top-votes">203 голосов</p>
+        </div>
+
+        <!-- книга 2 -->
+        <div class="top-book">
+            <div class="top-icon">
+                <span class="material-symbols-outlined">star</span>
+            </div>
+
+            <h3>Убить пересмешника</h3>
+            <p class="top-author">Харпер Ли</p>
+
+            <p class="top-rating">
+                <span class="material-symbols-outlined">star</span>
+                4.9
+            </p>
+
+            <p class="top-votes">187 голосов</p>
+        </div>
+
+        <!-- книга 3 -->
+        <div class="top-book">
+            <div class="top-icon">
+                <span class="material-symbols-outlined">star</span>
+            </div>
+
+            <h3>Маленькая жизнь</h3>
+            <p class="top-author">Ханья Янагихара</p>
+
+            <p class="top-rating">
+                <span class="material-symbols-outlined">star</span>
+                4.8
+            </p>
+
+            <p class="top-votes">156 голосов</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- Рекомендовано участниками -->
+
+<section class="members-recommend">
+
+    <h2 class="members-title">
+        <span class="material-symbols-outlined">groups</span>
+        Рекомендовано участниками
+    </h2>
+
+    <div class="members-books" id="membersBooks">
+
+        <!-- книга 1 -->
+        <div class="member-book">
+
+            <div class="genre">Современная проза</div>
+
+            <div class="member-rating">
+                <span class="material-symbols-outlined">star</span>
+                4.8 (156)
+            </div>
+
+            <h3>Маленькая жизнь</h3>
+            <p class="member-author">Ханья Янагихара</p>
+
+            <p class="member-desc">
+                Эпическая история о четырех друзьях в Нью-Йорке, их амбициях,
+                успехах и жизненных испытаниях.
+            </p>
+
+            <div class="member-reason">
+                <strong>Почему стоит прочитать:</strong>
+                Глубокое исследование дружбы, травмы и человеческой стойкости.
+            </div>
+
+            <p class="recommended">Рекомендовано: Анна</p>
+
+            <button class="read-btn" onclick="increaseInterest(this)">
+                <span class="material-symbols-outlined">menu_book</span>
+                Хочу прочитать (<span class="count">12</span>)
+            </button>
+
+        </div>
+
+
+        <!-- книга 2 -->
+        <div class="member-book">
+
+            <div class="genre">Магический реализм</div>
+
+            <div class="member-rating">
+                <span class="material-symbols-outlined">star</span>
+                4.9 (203)
+            </div>
+
+            <h3>Сто лет одиночества</h3>
+            <p class="member-author">Габриэль Гарсиа Маркес</p>
+
+            <p class="member-desc">
+                История семьи Буэндиа на протяжении семи поколений
+                в вымышленном городе Макондо.
+            </p>
+
+            <div class="member-reason">
+                <strong>Почему стоит прочитать:</strong>
+                Шедевр магического реализма и обязательное чтение.
+            </div>
+
+            <p class="recommended">Рекомендовано: Дмитрий</p>
+
+            <button class="read-btn" onclick="increaseInterest(this)">
+                <span class="material-symbols-outlined">menu_book</span>
+                Хочу прочитать (<span class="count">8</span>)
+            </button>
+
+        </div>
+
+
+        <!-- книга 3 -->
+        <div class="member-book">
+
+            <div class="genre">Классика</div>
+
+            <div class="member-rating">
+                <span class="material-symbols-outlined">star</span>
+                4.7 (98)
+            </div>
+
+            <h3>Тёмные аллеи</h3>
+            <p class="member-author">Иван Бунин</p>
+
+            <p class="member-desc">
+                Цикл рассказов о любви в разных её проявлениях:
+                страстной, трагической и нежной.
+            </p>
+
+            <div class="member-reason">
+                <strong>Почему стоит прочитать:</strong>
+                Изысканная проза русского мастера.
+            </div>
+
+            <p class="recommended">Рекомендовано: Елена</p>
+
+            <button class="read-btn" onclick="increaseInterest(this)">
+                <span class="material-symbols-outlined">menu_book</span>
+                Хочу прочитать (<span class="count">5</span>)
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Предложить книгу -->
+
+<section class="suggest-book">
+
+    <h4>
+        <span class="material-symbols-outlined">thumb_up</span>
+        Предложите свою книгу
+    </h4>
+
+    <p>
+        Хотите порекомендовать книгу другим участникам?
+        Отправьте свое предложение!
+    </p>
+
+    <button class="suggest-btn" onclick="toggleSuggestForm()">
+        Предложить книгу
+    </button>
+
+    <!-- форма -->
+    <div class="suggest-form" id="suggestForm">
+
+        <input type="text" id="bookTitle" placeholder="Название книги">
+        <input type="text" id="bookAuthor" placeholder="Автор">
+        <input type="text" id="bookGenre" placeholder="Жанр">
+
+        <textarea id="bookDesc" placeholder="Короткое описание"></textarea>
+
+        <textarea id="bookReason" placeholder="Почему стоит прочитать"></textarea>
+
+        <button class="submit-book" onclick="submitBook()">
+            Отправить
+        </button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

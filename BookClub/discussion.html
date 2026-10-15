@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Обсуждения — Книжный Клуб</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <span class="material-symbols-outlined">menu_book</span>
+        <span class="logo-text">Книжный Клуб</span>
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">
+            <span class="material-symbols-outlined">home</span>
+            Главное
+        </a>
+
+        <a href="discussion.html" class="active">
+            <span class="material-symbols-outlined">forum</span>
+            Обсуждения
+        </a>
+
+        <a href="schedule.html">
+            <span class="material-symbols-outlined">calendar_month</span>
+            Расписание
+        </a>
+
+        <a href="recommendations.html">
+            <span class="material-symbols-outlined">star</span>
+            Рекомендации
+        </a>
+    </nav>
+</header>
+
+<section class="discussion-page">
+
+<h1 class="page-title">Обсуждение книг</h1>
+<p class="page-subtitle">Делитесь мыслями и впечатлениями о прочитанном</p>
+
+
+<!-- ===================== 1 ===================== -->
+
+<div class="discussion-card">
+<div class="card-header" onclick="toggleCard(this)">
+
+<div>
+<div class="book-line">
+<span class="status active">Активно</span>
+<span>1984</span>
+<span class="dot">•</span>
+<span>Джордж Оруэлл</span>
+</div>
+
+<h3 class="discussion-topic">
+  Актуальность антиутопии в современном мире
+</h3>
+
+<div class="meta">
+Начата участником Анна
+<span class="dot">•</span>
+2 комментария
+</div>
+</div>
+
+<span class="toggle-text">Развернуть</span>
+</div>
+
+
+<div class="card-content">
+
+<!-- Комментарий Анны -->
+<div class="comment">
+<div class="avatar">А</div>
+<div class="comment-body">
+<div class="comment-top">
+<strong>Анна</strong>
+<span>2 часа назад</span>
+</div>
+<p>
+Как вы думаете, насколько предсказания Оруэлла оказались точными, особенно в свете современных технологий слежения?
+</p>
+
+<div class="comment-actions">
+<span class="like-btn" onclick="like(this)">👍 <span>12</span></span>
+<span onclick="showReply(this)">Ответить</span>
+</div>
+
+<div class="replies">
+
+<div class="comment reply">
+<div class="avatar small">Д</div>
+<div class="comment-body reply-body">
+<div class="comment-top">
+<strong>Дмитрий</strong>
+<span>1 час назад</span>
+</div>
+<p>
+Очень точными. Концепция постоянного наблюдения через камеры и онлайн-слежку поразительно похожа.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<!-- Комментарий Елены -->
+<div class="comment">
+<div class="avatar">Е</div>
+<div class="comment-body">
+<div class="comment-top">
+<strong>Елена</strong>
+<span>4 часа назад</span>
+</div>
+<p>
+Меня поразил язык «новояз». Это гениальная метафора манипуляции через язык и информацию.
+</p>
+
+<div class="comment-actions">
+<span class="like-btn" onclick="like(this)">👍 <span>8</span></span>
+<span onclick="showReply(this)">Ответить</span>
+</div>
+
+<div class="replies"></div>
+</div>
+</div>
+
+
+<div class="add-comment">
+<textarea placeholder="Добавьте свой комментарий..."></textarea>
+<button onclick="addComment(this)">Опубликовать комментарий</button>
+</div>
+
+</div>
+</div>
+
+
+
+<!-- ===================== 2 ===================== -->
+
+<div class="discussion-card">
+<div class="card-header" onclick="toggleCard(this)">
+
+<div>
+<div class="book-line">
+<span class="status active">Активно</span>
+<span>Мастер и Маргарита</span>
+<span class="dot">•</span>
+<span>Михаил Булгаков</span>
+</div>
+
+<h3 class="discussion-topic">Символизм в романе</h3>
+
+<div class="meta">
+Начата участником Игорь
+<span class="dot">•</span>
+1 комментарий
+</div>
+</div>
+
+<span class="toggle-text">Развернуть</span>
+</div>
+
+<div class="card-content">
+
+<div class="comment">
+<div class="avatar">И</div>
+<div class="comment-body">
+<div class="comment-top">
+<strong>Игорь</strong>
+<span>1 день назад</span>
+</div>
+<p>
+Какие символы в романе вам показались наиболее значимыми?
+</p>
+
+<div class="comment-actions">
+<span class="like-btn" onclick="like(this)">👍 <span>15</span></span>
+<span onclick="showReply(this)">Ответить</span>
+</div>
+
+<div class="replies">
+
+<div class="comment reply">
+<div class="avatar small">М</div>
+<div class="comment-body reply-body">
+<div class="comment-top">
+<strong>Мария</strong>
+<span>20 часов назад</span>
+</div>
+<p>
+Для меня это был бал сатаны. Невероятная сцена, полная символизма власти и искушения.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="add-comment">
+<textarea placeholder="Добавьте свой комментарий..."></textarea>
+<button onclick="addComment(this)">Опубликовать комментарий</button>
+</div>
+
+</div>
+</div>
+
+
+
+<!-- ===================== 3 ===================== -->
+
+<div class="discussion-card closed">
+<div class="card-header" onclick="toggleCard(this)">
+
+<div>
+<div class="book-line">
+<span class="status closed-status">Закрыто</span>
+<span>Война и мир</span>
+<span class="dot">•</span>
+<span>Лев Толстой</span>
+</div>
+
+<h3 class="discussion-topic">Философия истории в романе</h3>
+
+<div class="meta">
+Начата участником Сергей
+<span class="dot">•</span>
+1 комментарий
+</div>
+</div>
+
+<span class="toggle-text">Развернуть</span>
+</div>
+
+<div class="card-content">
+
+<div class="comment">
+<div class="avatar">С</div>
+<div class="comment-body">
+<div class="comment-top">
+<strong>Сергей</strong>
+<span>3 дня назад</span>
+</div>
+<p>
+Толстой представляет уникальный взгляд на роль личности в истории. Что вы думаете о его философии?
+</p>
+
+<div class="comment-actions">
+<span class="like-btn" onclick="like(this)">👍 <span>20</span></span>
+<span onclick="showReply(this)">Ответить</span>
+</div>
+
+<div class="replies"></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

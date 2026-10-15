@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжный клуб</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Ежемесячные подборки книг от участников Книжного Клуба.
+                                      Узнайте о лучших книгах и предложите свои рекомендации.">
+    <meta name="keywords" content="книги, рекомендации, клуб, чтение, литература, современные книги, классика"> 
+    <!-- Иконки -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+    <span class="material-symbols-outlined">menu_book</span>
+    <span class="logo-text">Книжный Клуб</span>
+</div>
+
+    <nav class="nav">
+        <a href="index.html" class="active">
+            <span class="material-symbols-outlined">home</span>
+            Главная
+        </a>
+
+        <a href="discussion.html">
+            <span class="material-symbols-outlined">forum</span>
+            Обсуждения
+        </a>
+
+        <a href="schedule.html">
+            <span class="material-symbols-outlined">calendar_month</span>
+            Расписание
+        </a>
+
+        <a href="recommendations.html">
+            <span class="material-symbols-outlined">star</span>
+            Рекомендации
+        </a>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Добро пожаловать в наш Книжный Клуб</h1>
+        <p>Место, где любители литературы встречаются, обсуждают великие книги и делятся впечатлениями</p>
+        <!-- Кнопка теперь открывает модальное окно -->
+        <button class="main-btn" onclick="openRegister()">
+            Присоединиться к клубу
+        </button>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/books.jpg" alt="Обложка-книги">
+    </div>
+</section>
+
+<!-- Модальное окно регистрации -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeRegister()">&times;</span>
+        <h2>Регистрация в Клубе</h2>
+        <input type="text" id="regName" placeholder="Имя">
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPass" placeholder="Пароль">
+        <button class="submit-book" onclick="submitRegister()">Зарегистрироваться</button>
+    </div>
+</div>
+
+
+<section class="stats">
+
+    <div class="card">
+        <span class="material-symbols-outlined icon">groups</span>
+        <h2>43</h2>
+        <p>Членов клуба</p>
+    </div>
+
+    <div class="card">
+        <span class="material-symbols-outlined icon">menu_book</span>
+        <h2>89</h2>
+        <p>Прочитано книг</p>
+    </div>
+
+    <div class="card">
+        <span class="material-symbols-outlined icon">forum</span>
+        <h2>7</h2>
+        <p>Активных обсуждений</p>
+    </div>
+
+    <div class="card">
+        <span class="material-symbols-outlined icon">event</span>
+        <h2>2</h2>
+        <p>Планируемых встреч</p>
+    </div>
+
+</section>
+
+
+<section class="current-book">
+
+    <div class="book-info">
+
+        <div class="book-title">
+            <span class="material-symbols-outlined">menu_book</span>
+            <h2>Текущая книга</h2>
+        </div>
+
+        <p class="subtitle">Что мы читаем сейчас</p>
+
+        <h3 class="book-name">1984</h3>
+        <p class="author">Автор: Джордж Оруэлл</p>
+
+        <div class="progress-header">
+            <span>Прогресс чтения</span>
+            <span class="percent">65%</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <p class="date">
+            <span class="material-symbols-outlined">calendar_month</span>
+            Следующая встреча: 25 марта 2026
+        </p>
+
+    </div>
+
+    <div class="book-image">
+        <img src="images/open-book.jpg" alt="Изобрадение-книги">
+    </div>
+
+</section>
+
+
+<section class="quick">
+
+    <h2>Быстрый доступ</h2>
+
+    <div class="quick-grid">
+
+        <a href="discussion.html" class="quick-card">
+            <div class="card-header">
+                <span class="material-symbols-outlined">forum</span>
+                <h3>Обсуждения</h3>
+            </div>
+            <p>Делитесь мнениями о прочитанных книгах с другими участниками</p>
+        </a>
+
+        <a href="schedule.html" class="quick-card">
+            <div class="card-header">
+                <span class="material-symbols-outlined">calendar_month</span>
+                <h3>Расписание</h3>
+            </div>
+            <p>Посмотрите расписание предстоящих встреч и собыитй клуба</p>
+        </a>
+
+        <a href="recommendations.html" class="quick-card">
+            <div class="card-header">
+                <span class="material-symbols-outlined">star</span>
+                <h3>Рекомендации</h3>
+            </div>
+            <p>Ознакомтесь с нашими ежемесячными рекомендациями книг</p>
+        </a>
+
+    </div>
+</section>
+<!-- Нижний колонтитул -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2026 Книжный Клуб. Все права защищены.</p>
+        <p>Контакты: info@bookclub.com | +373 00 000 000</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
