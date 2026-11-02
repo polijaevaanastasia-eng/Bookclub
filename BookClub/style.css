@@ -1260,3 +1260,43 @@ outline:none;
     }
 
 }
+
+
+
+/* Оформление раздела о книжном клубе */
+.club-info {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #f5f0e8;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.club-info h2 {
+    font-size: 28px;
+    color: #594532;
+    margin-bottom: 20px;
+}
+
+.club-info p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Адаптация для мобильных экранов */
+@media (max-width: 600px) {
+    .club-info {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    .club-info h2 {
+        font-size: 23px;
+    }
+
+    .club-info p {
+        font-size: 16px;
+    }
+}
